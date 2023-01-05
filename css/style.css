@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #10101A;
+    scroll-behavior: smooth;
+
+}
+
+.nav-bar {
+    width: 100%;
+    height: 80px;
+    background: #10101abf;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 60px;
+    position: fixed;
+    z-index: 1;
+}
+
+.nav-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-item {
+    margin: 0 20px;
+}
+
+.nav-item :hover {
+    animation: navline 200ms forwards;
+}
+
+@keyframes navline {
+    0% {
+        border-bottom: 0px solid #fff;
+    }
+
+
+
+    100% {
+        border-bottom: 2px solid #fff;
+    }
+}
+
+
+.nav-item a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.logo {
+    height: 40px;
+}
+
+.home {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    padding: 0 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.title {
+    font-size: 18px;
+    color: #fff;
+    text-align: start;
+    /* white-space: nowrap; */
+
+}
+
+
+
+.petchx {
+    background: linear-gradient(135deg, #6BC5F8, #CF59E6, #6BC5F8, #CF59E6);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient 5s ease infinite;
+    background-size: 400% 400%;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.profile {
+    height: 30vw;
+    max-height: 400px;
+    display: none;
+    animation: bounceIn 500ms forwards;
+}
+
+@media screen and (min-width: 620px) {
+    .title {
+        font-size: 28px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .title {
+        font-size: 28px;
+    }
+
+    .profile {
+        display: block;
+    }
+}
+
+
+/* css make nav item as dropdown button when the width is less than 600 */
+
+@media screen and (max-width: 600px) {
+    .nav-items {
+        display: none;
+    }
+}
+
+
+
+
+/* css bounce in animation */
+
+@keyframes bounceIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.3);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+
+    70% {
+        transform: scale(0.9);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* css fade in down animation */
+
+.fadeInDown {
+    animation-name: fadeInDown;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.fadeInUp {
+    animation-name: fadeInUp;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.about {
+    width: 100%;
+    height: 100vh;
+    background: #10101A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
