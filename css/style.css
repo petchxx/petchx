@@ -214,14 +214,15 @@ body {
 
 
 .tagcloud {
-
     width: 100%;
     font-weight: bold;
     font-size: 16px;
     cursor: default;
     color: white;
+}
 
-
+.tagcloud--item:hover {
+    font-size: 18px;
 }
 
 
@@ -250,6 +251,10 @@ body {
 
     .tagcloud {
         font-size: 24px;
+    }
+
+    .tagcloud--item:hover {
+        font-size: 26px;
     }
 
     .nav-items {

@@ -3,7 +3,7 @@ const Texts = ['HTML', 'CSS', 'JAVASCRIPT', 'FLUTTER', 'DART', 'PYTHON', 'JAVA',
 var tagCloud = TagCloud('.skills', Texts, {
 
     // Sphere radius in px
-    radius: 250,
+    radius: 220,
 
     // animation speed
     // slow, normal, fast

@@ -1,7 +1,15 @@
+var wordTemp = "";
+
 function typeWriter() {
     // create a list of I'm a Web Developer, I'm a Programmer
-    var words = ["I'm a Web Developer.", "I'm a Programmer.", "I'm a Designer.", "I'm a Freelancer.", "I'm an Application Developer."];
+    var words = ["I'm a Web Developer.", "I'm a Programmer.", "I'm a Designer.", "I'm a Freelancer.", "I'm a Developer."];
     var word = words[Math.floor(Math.random() * words.length)];
+    if (wordTemp == word) {
+        typeWriter();
+        return
+    } else {
+        wordTemp = word;
+    }
     document.getElementById("occupation").innerHTML = "";
     var i = 0;
     var timer = setInterval(function () {
