@@ -25,7 +25,7 @@ body {
 }
 
 .nav-items {
-    display: flex;
+    display: none;
     justify-content: space-between;
     align-items: center;
     list-style: none;
@@ -118,32 +118,6 @@ body {
     animation: bounceIn 500ms forwards;
 }
 
-@media screen and (min-width: 620px) {
-    .title {
-        font-size: 28px;
-    }
-}
-
-@media screen and (min-width: 1000px) {
-    .title {
-        font-size: 28px;
-    }
-
-    .profile {
-        display: block;
-    }
-}
-
-
-/* css make nav item as dropdown button when the width is less than 600 */
-
-@media screen and (max-width: 600px) {
-    .nav-items {
-        display: none;
-    }
-}
-
-
 
 
 /* css bounce in animation */
@@ -208,11 +182,92 @@ body {
 }
 
 
-.about {
+.skill {
     width: 100%;
     height: 100vh;
     background: #10101A;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+
+
+
+
+
+.mySkill {
+    width: 100%;
+    background: #10101A;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    column-gap: 10vw;
+    row-gap: 10vw;
+}
+
+
+.tagcloud {
+
+    width: 100%;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: default;
+    color: white;
+
+
+}
+
+
+.fade-out {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    /* Fade in duration and easing */
+}
+
+
+@media screen and (min-width: 620px) {
+    .title {
+        font-size: 28px;
+    }
+
+    .mySkill {
+        font-size: 28px;
+    }
+
+    .tagcloud {
+        font-size: 24px;
+    }
+
+    .nav-items {
+        display: flex;
+    }
+
+}
+
+@media screen and (min-width: 1000px) {
+    .title {
+        font-size: 28px;
+    }
+
+    .profile {
+        display: block;
+    }
+
+    .mySkill {
+        flex-direction: row !important;
+    }
 }
