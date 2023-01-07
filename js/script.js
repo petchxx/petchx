@@ -70,3 +70,15 @@ window.addEventListener('scroll', () => {
         fadeInElement.style.transform = 'scale(0.8)';
     }
 });
+
+
+// delayed function
+
+function delayed() {
+    setTimeout(function () {
+        document.querySelector('.splash').style.transform = 'translateY(-100%)';
+        document.querySelector('.body').style.display = 'block';
+    }, 1500);
+}
+
+delayed();

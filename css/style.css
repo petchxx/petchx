@@ -9,8 +9,29 @@ body {
     font-family: 'Poppins', sans-serif;
     background: #10101A;
     scroll-behavior: smooth;
-
 }
+
+.body {
+    display: none;
+}
+
+.splash {
+    width: 100%;
+    height: 100vh;
+    background: #10101A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 2;
+    transform: translateY(0px);
+    transition-duration: 400ms;
+}
+
+.splash img {
+    height: 20vw;
+}
+
 
 .nav-bar {
     width: 100%;
