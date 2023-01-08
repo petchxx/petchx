@@ -25,11 +25,11 @@ function typeWriter() {
 typeWriter();
 
 
-document.addEventListener("visibilitychange", function () {
-    if (document.visibilityState === "visible") {
-        location.reload();
-    }
-});
+// document.addEventListener("visibilitychange", function () {
+//     if (document.visibilityState === "visible") {
+//         location.reload();
+//     }
+// });
 
 
 
@@ -82,3 +82,4 @@ function delayed() {
 }
 
 delayed();
+
