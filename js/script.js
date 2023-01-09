@@ -78,7 +78,7 @@ function delayed() {
     setTimeout(function () {
         document.querySelector('.splash').style.transform = 'translateY(-100%)';
         document.querySelector('.body').style.display = 'block';
-    }, 1500);
+    }, 2500);
 }
 
 delayed();
