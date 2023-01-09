@@ -115,6 +115,7 @@ body {
 .petchx {
     background: linear-gradient(135deg, #6BC5F8, #CF59E6, #6BC5F8, #CF59E6);
     background-clip: text;
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: gradient 5s ease infinite;
     background-size: 400% 400%;
