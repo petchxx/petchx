@@ -2,7 +2,7 @@ var wordTemp = "";
 
 function typeWriter() {
     // create a list of I'm a Web Developer, I'm a Programmer
-    var words = ["I'm a Web Developer.", "I'm a Programmer.", "I'm a Designer.", "I'm a Freelancer.", "I'm a Developer."];
+    var words = ["<dev> Hello World 👋🏻 </dev>", "<dev> Ux/Ui Designer </dev> ", "<dev> Frontend Developer </dev> "];
     var word = words[Math.floor(Math.random() * words.length)];
     if (wordTemp == word) {
         typeWriter();
@@ -10,11 +10,11 @@ function typeWriter() {
     } else {
         wordTemp = word;
     }
-    document.getElementById("occupation").innerHTML = "";
+    document.getElementById("welcome").innerHTML = "";
     var i = 0;
     var timer = setInterval(function () {
         if (i < word.length) {
-            document.getElementById("occupation").innerHTML += word.charAt(i);
+            document.getElementById("welcome").innerHTML += word.charAt(i);
             i++;
         }
     }, 50);
@@ -33,7 +33,7 @@ document.addEventListener("visibilitychange", function () {
 
 
 
-document.querySelector('.nav-item a').addEventListener('click', function (e) {
+document.querySelector('.nav-item li a').addEventListener('click', function (e) {
     e.preventDefault();
     document.querySelector(e.target.getAttribute('href')).scrollIntoView({
         behavior: 'smooth'

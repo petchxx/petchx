@@ -18,65 +18,48 @@
     <div class="splash">
         <img src="img/giphy.gif" alt="" loop=infinite>
     </div>
-    <div class="body">
+    <div class="body" id="home">
 
-        <div class="nav-bar fadeInDown">
-            <a href=" #home"><img class="logo" src="img/logo.png"></a>
-            <ul class="nav-items">
-                <li class="nav-item"><a href="#about">ABOUT</a></li>
-                <li class="nav-item"><a href="#skills">SKILLS</a></li>
-                <li class="nav-item"><a href="#projects">PROJECTS</a></li>
-                <li class="nav-item"><a href="#contact">CONTACT</a></li>
-
-            </ul>
-        </div>
-        <div class="home fade-out" id="home">
+        <nav>
+            <div class="nav-container fadeInDown">
+                <div class="nav-logo">
+                    <a href="#">
+                        <img class="logo" src="img/logo.png" alt="Petchx">
+                    </a>
+                </div>
+                <div class="nav-menu">
+                    <ul class="nav-item">
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">PROJECTS</a></li>
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="home fade-out">
             <div class="container">
                 <div class="title fadeInUp">
-                    <h1>My name is <span class="petchx">Petchx</span>,<br><span id="occupation"></span></h1>
+                    <p id="welcome"></p>
+                    <h1>Hi, I'm <span class="petchx">Petchx</span></h1>
+                    <p>I am a fullstack developer with a passion for creating innovative and
+                        user-friendly web and
+                        mobile applications. I specialize in utilizing modern technologies and best practices to build
+                        high-quality and efficient software. </p>
+
+                    <div class="buttons">
+                        <button class="btn">PROJECTS</button>
+                        <button class="btnOutline"><span class="gradientText">CONTACTS</span></button>
+                    </div>
                 </div>
                 <img class="profile" src="img/petchx.png" alt="Petchx - Petch Panuphong">
             </div>
         </div>
-
-        <div class=" about fade-in" id="about">
-            <div class="card">
-                <img class="aboutImg" src="img/about.jpg" alt="Petchx - Petch Panuphong">
-                <div class="aboutMe">
-                    <h1 class="heading petchx">About me</h1>
-                    <h1 class="name">Petch Panuphong</h1>
-                    <p>My skills in both front-end and back-end development allow me to bring innovative ideas to
-                        life
-                        and constantly improve my products. Outside of work, I enjoy staying active and exploring
-                        new
-                        experiences.</p>
-                    <h1 class="heading lop">Listening on Spotify</h1>
-                    <a class="spotify">
-                        <img class="spotifyImg" src="">
-                        <div class="spotifyContainer">
-                            <div class="spotifyContent">
-                                <p class="spotifyName"></p>
-                                <p class="spotifyArtists"></p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="skill" id="skills">
-            <div class="mySkill">
-                <h1>My <span class="petchx">Skills</span></h1>
-                <span class="skills"></span>
-            </div>
-        </div>
+    </div>
 
 
 </body>
-<script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"> </script>
-<script src="js/skills.js"></script>
 <script src="js/script.js"></script>
-<script src="js/spotify.js"></script>
 
 
 
