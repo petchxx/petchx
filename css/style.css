@@ -11,7 +11,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
     background: #F9F9FB;
     scroll-behavior: smooth;
@@ -19,12 +19,12 @@ body {
 }
 
 h1 {
-    font-size: 58px;
+    font-size: 3rem;
     font-weight: bold;
 }
 
 p {
-    font-size: 14px;
+    font-size: 0.8rem;
 }
 
 .body {
@@ -112,7 +112,7 @@ nav {
 .container {
     width: 1500px;
     padding: 0 40px;
-    display: flex;
+    display: block;
     align-items: center;
     justify-content: space-between;
 
@@ -134,7 +134,7 @@ nav {
 
 .btn {
     height: 50px;
-    width: 200px;
+    width: 150px;
     margin-right: 10px;
     border: none;
     border-radius: 50px;
@@ -147,7 +147,7 @@ nav {
 
 .btnOutline {
     height: 50px;
-    width: 200px;
+    width: 150px;
     border-radius: 50px;
     box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
     border: solid 2px transparent;
@@ -167,7 +167,7 @@ nav {
 }
 
 #welcome {
-    font-size: 18px;
+    font-size: 1rem;
 }
 
 
@@ -198,6 +198,13 @@ nav {
     height: 40vw;
     max-height: 500px;
     display: none;
+    animation: bounceIn 500ms forwards;
+}
+
+.onPhone {
+    display: block;
+    height: 70vw;
+    max-height: 500px;
     animation: bounceIn 500ms forwards;
 }
 
@@ -315,6 +322,14 @@ nav {
         font-size: 16px;
     }
 
+    .btn {
+        width: 200px;
+    }
+
+    .btnOutline {
+        width: 200px;
+    }
+
 
 }
 
@@ -331,6 +346,14 @@ nav {
 
     .profile {
         display: block;
+    }
+
+    .onPhone {
+        display: none;
+    }
+
+    .container {
+        display: flex;
     }
 
 
